@@ -26,41 +26,51 @@ body {
   margin: 30px auto;
 }
 
+.row {
+  margin: 18px 0;
+}
+
 .card {
   display: inline-block;
-  background-image: url("/assets/img/pattern.png");
-  background-size: 350px;
-  background-repeat: repeat;
   width: 350px;
   height: 350px;
   border-radius: 25px;
-  margin: 18px 12px;
+  margin: 0 12px;
   box-shadow: 2px 2px 10px lightgray;
-}
-
-.result {
-  display: none;
+  cursor: pointer;
   text-align: center;
+  overflow: hidden;
 }
 
-.result img{
-  width: 280px;
+.covered {
+  background-image: url("/assets/img/pattern.png");
+  background-size: 350px;
+  background-repeat: repeat;
   height: 100%;
 }
 
-.result:hover{
-  display: inline-block;
+.face-up {
+  background-color: #ffffff;
 }
+
+.active {
+  background-color: #ffffff;
+  width: 350px;
+  height: 100%;
+}
+
+img{
+  width: 280px;
+  padding: 20px;
+}
+
+/* .face-up:hover{
+  display: block;
+} */
 
 .name-card {
   text-align: center;
-  color: orange;
+  color: fuchsia;
   font-size: 36px;
   text-shadow: 1px 1px 2px #000000;
 }
-
-.face-up{
-
-}
-
-
