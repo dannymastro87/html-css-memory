@@ -38,7 +38,7 @@ body {
   margin: 0 12px;
   box-shadow: 2px 2px 10px lightgray;
   cursor: pointer;
-  text-align: center;
+  position: relative;
   overflow: hidden;
 }
 
@@ -47,26 +47,38 @@ body {
   background-size: 350px;
   background-repeat: repeat;
   height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.covered:hover,
+.covered:focus,
+.covered:active {
+  display: none;
 }
 
 .face-up {
   background-color: #ffffff;
+  text-align: center;
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
 }
 
 .active {
   background-color: #ffffff;
   width: 350px;
   height: 100%;
+  text-align: center;
 }
 
 img{
   width: 280px;
   padding: 20px;
 }
-
-/* .face-up:hover{
-  display: block;
-} */
 
 .name-card {
   text-align: center;
