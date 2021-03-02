@@ -7,6 +7,7 @@
 body {
   background-color: #add8e6;
   font-family: 'Nerko One', cursive;
+  text-align: center;
 }
 
 footer {
@@ -15,13 +16,11 @@ footer {
 
 .title {
   font-size: 92px;
-  text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px 10px lightgray;
 }
 
 .copyright {
-  text-align: center;
   font-size: 24px;
 }
 
